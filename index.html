@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+        <link rel="stylesheet" href="./assets/stylesheets/slick.css" />
+        <link rel="stylesheet" href="./assets/stylesheets/slick-theme.css" />
+        <title>kouki-web</title>
+    </head>
+    <body>
+        <div class="l-wrap">
+            <header class="l-header">
+                <div class="c-header__around">
+                    <span class="c-hamburger__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <nav class="nav">
+                        <ul class="p-header__navlink">
+                            <li><a href="" class="link">home</a></li>
+                            <li><a href="#c-section__head--about" class="link">about</a></li>
+                            <li><a href="#c-section__head--skill" class="link">skill</a></li>
+                            <li><a href="#c-section__head--portfolio" class="link">portfolio</a></li>
+                            <li><a href="#c-section__head--contact" class="link">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="c-header__mainimg">
+                    <img src="./assets/images/header.jpg" alt="headerimg"/>
+                    <p class="c-header__title">kouki-portfolio</p>
+                </div>
+            </header>
+            <main class="l-main">
+                <section class="l-section__about">
+                    <div class="p-section__head">
+                        <h1 id="c-section__head--about">ABOUT</h1>
+                    </div>
+                    <h2 id="c-section__head--name" class="fadeOff">Kouki Sekiguchi</h2>
+                    <div class="c-section__body--about">
+                        <img src="./assets/images/kouki.jpg" id="c-section__body--myimg" class="fadeOff" alt="kouki" />
+                        <p id="c-section__body--profile" class="fadeOff">
+                            1998年10月14日生まれ東京育ちの男です。<br>
+                            2019年からKENスクールに通い、Javaの勉強を始め、<br>
+                            在学中にSESに内定が決まり、コールセンターで働きながら<br>
+                            HTML,css,JavaScript,jQueryの研修、勉強を始める。<br>
+                            モダンなフロントエンド開発ができるエンジニアを<br>目指し日々勉強中です。
+                        </p>
+                    </div>
+                </section>
+                <section class="l-section__skill">
+                    <div class="p-section__head">
+                        <h1 id="c-section__head--skill">SKILL</h1>
+                    </div>
+                    <div class="c-section__body--skill">
+                        <div class="c-section__body--frontend">
+                            <p class="c-section__body--frontendtext">フロントエンド</p>
+                            <div class="c-section__body--html">
+                                <img src="./assets/images/html.jpeg" class="c-section__body--htmlimg"  alt="html"/>
+                                <p class="c-section__body--htmltext">HTML</p>
+                            </div>
+                            <div class="c-section__body--css">
+                                <img src="./assets/images/css.jpeg" class="c-section__body--cssimg"  alt="css" />
+                                <p class="c-section__body--csstext">CSS</p>
+                            </div>
+                            <div class="c-section__body--js">
+                                <img src="./assets/images/js.jpeg" class="c-section__body--jsimg"  alt="js" />
+                                <p class="c-section__body--jstext">JavaScript</p>
+                            </div>
+                            <div class="c-section__body--jquery">
+                                <img src="./assets/images/jquery.jpeg" class="c-section__body--jqueryimg"  alt="jquery"/>
+                                <p class="c-section__body--jquerytext">jQuery</p>
+                            </div>
+                        </div>
+                        <div class="c-section__body--backend">
+                            <p class="c-section__body--backendtext">バックエンド</p>
+                            <div class="c-section__body--java">
+                                <img src="./assets/images/java.jpeg" class="c-section__body--javaimg"  alt="java"/>
+                                <p class="c-section__body--javatext">Java</p>
+                            </div>
+                        </div>
+                        <div class="c-section__body--cms">
+                            <p class="c-section__body--cmstext">CMS</p>
+                            <div class="c-section__body--wordpress">
+                                <img src="./assets/images/wordpress.jpeg" class="c-section__body--wordpressimg" alt="wordpress"/>
+                                <p class="c-section__body--wordpresstext">wordpress</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="l-section__portfolio">
+                    <div class="p-section__head">
+                        <h1 id="c-section__head--portfolio">PORTFOLIO</h1>
+                    </div>
+                    <div class="c-section__body--portfolio">
+                        <ul class="slider">
+                            <li class="portfoliobox" id="img1">
+                                <img src="./assets/images/portfolio1.jpg" alt="image01">
+                                <p class="portfoliotext-a">天気予報</p>
+                            </li>
+                            <li class="portfoliobox" id="img2">
+                                <img src="./assets/images/portfolio2.jpg" alt="image02">
+                                <p class="portfoliotext-b">wordpress作品</p>
+                            </li>
+                            <li class="portfoliobox" id="img3">
+                                <img src="./assets/images/portfolio3.jpg" alt="image03">
+                                <p class="portfoliotext-c">portfolio</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal1" style="display: none;">
+                        <div class="modal-content">
+                            <h1 class="modal-title">神経衰弱</h1>
+                            <p class="modal-text">最初の作品です。神経衰弱を作りました。</p>
+                            <a href="http://app.kouki1014.work/"><div class="modal-around">
+                                <p class="modal__around-text">アプリを見る</p>
+                            </div></a>
+                            <button type="button" class="modal-close">x</button>
+                        </div>
+                    </div>
+                    <div class="modal2" style="display: none;">
+                        <div class="modal-content">
+                            <h1 class="modal-title">Wordpress作品</h1>
+                            <p class="modal-text">飼っている犬のホームページを作りました。</p>
+                            <a href="http://kouki1014.sunnyday.jp/"><div class="modal-around">
+                                <p class="modal__around-text">アプリを見る</p>
+                            </div></a>
+                            <button type="button" class="modal-close">x</button>
+                        </div>
+                    </div>
+                    <div class="modal3" style="display: none;">
+                        <div class="modal-content">
+                            <h1 class="modal-title">ポートフォリオ</h1>
+                            <p class="modal-text">HTML,CSS,JavaScriptを用いて作りました。<br>レスポンシブ対応してあります。</p>
+                            <a href="http://portfolio.kouki1014.work/"><div class="modal-around">
+                                <p class="modal__around-text">アプリを見る</p>
+                            </div></a>
+                            <button type="button" class="modal-close">x</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="l-section__contact">
+                    <div class="p-section__head">
+                        <h1 id="c-section__head--contact">CONTACT</h1>
+                    </div>
+                    <div class="c-section__body--contact">
+                        <p class="c-section__contact--text">
+                            ご質問、ご感想などお気軽にご寄せください。<br>
+                            Twitterでもご連絡お待ちしております。
+                        </p>
+                        <form action="">
+                            <input type="text" placeholder="お名前" name="name" required>
+                            <input type="email" placeholder="メールアドレス" name="email" required>
+                            <textarea placeholder="内容" name="message" required></textarea>
+                            <input type="submit" value="送信">
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="l-footer">
+                <div class="p-footer__around">
+                    <p class="c-footer__around--text">©2021 kouki</p>
+                    <a href="https://twitter.com/kou16510">
+                        <img src="./assets/images/twitter.png" class="c-footer__around--twitter" alt="twitter" />
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="./assets/js/jquery-3.5.1.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
