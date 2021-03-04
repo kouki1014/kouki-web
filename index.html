@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>神経衰弱</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <ul class="lists clearfix"></ul>
+        <script type="text/javascript" src="./assets/js/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            var k=$(".lists"),
+            a=undefined,
+            b=undefined,
+            c=undefined,
+            d=undefined,
+            zero=0,
+            array=[],
+            f=false,
+            t=true,
+            m="";
+            function mathField(){
+                for(var num=0;num<16;num++){
+                    var p=Math.floor(num/2);
+                    var randoms=Math.floor(Math.random()*16);
+                    if(array[randoms]===undefined){
+                        array[randoms]=p
+                    }else{
+                        num--
+                    }
+                }
+                for(var num=0;num<16;num++){
+                    m+="<li data-number="+array[num]+">?</li>"
+                }
+                k.append(m);
+                b=k.find("li")
+            }
+            function game(){
+                b.on("click",function(){
+                    if($(this).text()!=="?"||!t){
+                        return false
+                    }
+                    a=$(this);
+                    var p=a.data("number");
+                    a.text(p);
+                    if(d==undefined){
+                        d=p;
+                        c=a;
+                        f=true
+                    }else{
+                        if(d==p){
+                            zero++;
+                            if(zero==16/2){
+                                alert("Game Over")
+                            }
+                            f=true
+                        }else{
+                            f=false
+                        }
+                        d=undefined
+                    }
+                    if(!f){
+                        t=false;
+                        g()
+                    }
+                }
+            )}
+            function g(){
+                setTimeout(function(){
+                    c.text("?");
+                    a.text("?");
+                    t=true
+                },1000
+            )}
+            mathField();
+            game()
+        });
+        </script>
+    </body>
+</html>
